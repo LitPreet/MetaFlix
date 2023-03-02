@@ -9,10 +9,7 @@ hammburger.addEventListener("click",()=>{
     hammburger.classList.toggle("active");
     navmenu.classList.toggle("active");
 })
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"),()=>{
-//     hammburger.classList.remove("active");
-//     navmenu.classList.remove("active")
-// })
+
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
@@ -20,7 +17,7 @@ document.addEventListener('mousemove', (e) => {
 navItem.forEach(box => {
     box.addEventListener('mouseenter', (e)=>{
      cursor.classList.add("hover");
-    navlink.classList.add("black");
+    // navlink.classList.add("black");
      console.log("hovered");
     });
   });

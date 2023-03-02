@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -15,7 +16,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="main">
+
     <nav class="navbar">
       <div class="logo">
         <img src="./img/My project.png" alt="" class="logo-img" />
@@ -35,14 +36,18 @@
       </ul>
 
       <!-- search bar -->
-      
+
       <div class="search-box">
-        <input type="text" class="search-txt" name="" placeholder="Search any movie....">
+        <input
+          type="text"
+          class="search-txt"
+          name=""
+          placeholder="Search any movie...."
+        />
         <a href="#" class="search-btn">
           <ion-icon name="search-outline"></ion-icon>
         </a>
       </div>
-   
 
       <!-- Ionic Icons -->
 
@@ -57,15 +62,33 @@
         <span class="bar"></span>
       </div>
     </nav>
-</div>
-<div class="cursor"></div>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos distinctio officiis libero nisi? Aspernatur, nam vero. Neque, vel quam nam aut consequatur expedita aspernatur numquam voluptates, commodi iure veritatis?
+
+    <div class="cursor"></div>
+ 
 
     <!-- main body  -->
-    <!-- <div class="main">
+    <div class="main" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%, transparent 50%), url(./img/main.jpg);">
+
+      <div class="info-content">
+        <img src="./img/peakylogo.png" alt="" class="logo-peaky" />
+        <div class="peaky-info">
+          <p class="peaky-name">Peaky Blinders</p>
+          <p class="time-peaky">2013 || 6 seasons || period places</p>
+          <p class="peaky-genre">
+            A notorious gang in 1919 Birmingham, England, is led by the fierce
+            Tommy Shelby, a crime boss set on moving up in the world no matter
+            the cost.
+          </p>
+          <p class="starring">
+            Starring: Cillian Murphy,Sam Neill,Helen McCrory
+          </p>
+          <p class="creators">Creators:Steven Knight</p>
+        </div>
+      </div>
+      <!-- second div  -->
       
-        <h1>releasing 15 october</h1>
-    </div> -->
+      <!-- end  -->
+    </div>
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script
@@ -77,5 +100,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos d
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="./js/home.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
