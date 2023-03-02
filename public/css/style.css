@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,7 +7,8 @@
 	font-family: "Poppins", sans-serif;
 }
 body{
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 li{
@@ -23,7 +25,7 @@ a{
     align-items: center;
     padding: 0 19px;
     background-color: #000;
-    width: 100%;
+    width: 100vw;
 }
 .nav-menu{
 display: flex;
@@ -45,6 +47,7 @@ left: 200px;
     cursor: pointer;
 
 }
+
 .bar{
   display: block;
   width: 25px;
@@ -79,7 +82,8 @@ left: 200px;
   transform-origin: center;
 }
 .logo-img{
-width: 100px;
+width: 120px;
+margin-left: 20px;
 }
 .user{
     display: flex;
@@ -133,7 +137,7 @@ width: 100px;
 }
 
 .search-btn {
-  color: #1abc9c;
+  color: white;
   width: 40px;
   height: 40px;
   display: flex;
@@ -143,21 +147,19 @@ width: 100px;
   transition: 0.5s;
 }
 .main{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: #181818; */
- 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%, transparent 50%), url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfiqv2Th67pFLpn6jzARZGNhBFTtaTfd4i5KPN1-WoxqDUerVqy4i7Yw_hRk146SO2KGIjra0RIIuHbv8oZ0m9LV5YZItZygejeC.jpg?r=15c);
 }
-
 
 .logo-peaky{
   width: 500px;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-left: 50px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .peaky-info{
   width: 500px;
@@ -186,13 +188,19 @@ width: 100px;
   color: white;
   margin-top: 20px;
 }
+.info-content{
+  /* background-color: #090909; */
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%, transparent 50%); */
+  position: absolute;
+}
 @media only screen and (max-width:962px ) and (min-width:768px){
-.logo-peaky{
+.logo-peaky,.peaky-info{
   width: 400px;
 
 }
 
 }
+
 @media (max-width:768px) {
     .hamburger{
         display: block;
@@ -236,9 +244,27 @@ width: 100px;
       display: none;
     }
 
-    .logo-peaky{
-      width: 400px;
+    .logo-peaky,.peaky-info{
+      width: 350px;
     }
+    .peaky-name{
+      font-size: 22px;
+    
+    }
+    .time-peaky{
+      font-size: 15px;
+      
+    }
+    .peaky-genre{
+      font-size: 14px;
+      
+    
+    }
+    .starring,.creators{
+      font-size: 14px;
+      
+    }
+
    
 }
 @media only screen and (max-width: 700px) and (min-width: 600px)
@@ -246,9 +272,7 @@ width: 100px;
   .logo-peaky{
     width: 350px;
   }
-  .info-content{
-    top: 50%;
-  }
+  
 }
 @media only screen and (max-width: 600px) and (min-width: 500px){
     .search-box:hover .search-txt {
@@ -256,10 +280,30 @@ width: 100px;
         padding: 0 6px;
       }
       .logo-img{
-        width: 70px;
+        width: 80px;
       }
       .cursor{
         display: none;
+      }
+      .logo-peaky,.peaky-info{
+        width: 300px;
+      }
+      .peaky-name{
+        font-size: 20px;
+      
+      }
+      .time-peaky{
+        font-size: 13px;
+        
+      }
+      .peaky-genre{
+        font-size: 13px;
+        
+      
+      }
+      .starring,.creators{
+        font-size: 14px;
+        
       }
      
 }
@@ -280,10 +324,55 @@ width: 100px;
         width: 0px;
       }
       .logo-img{
-        width: 70px;
+        width: 80px;
       }
       .cursor{
         display: none;
+      }
+      .logo-peaky,.peaky-info{
+        width: 200px;
+       
+      }
+      .main{
+      background-image: url(https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg);
+      background-position: right 0 top 0px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      }
+      .info-content{
+        top: 80%;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo-peaky{
+width: 370px;
+margin-top: 10px;
+margin-left: 0px;
+      }
+      .peaky-info{
+        width: 370px;
+        margin-left: 0px;
+      }
+      .peaky-name{
+        font-size: 20px;
+      
+      }
+      .time-peaky{
+        font-size: 13px;
+        
+      }
+      .peaky-genre{
+        font-size: 13px;
+        
+      
+      }
+      .starring,.creators{
+        font-size: 14px;
+        
       }
      
 }
@@ -296,11 +385,54 @@ width: 100px;
         font-size: 10px;
       }
       .logo-img{
-        width: 70px;
+        width: 80px;
       }
       .cursor{
         display: none;
       }
+      .main{
+        background-image: url(https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg);
+        background-position: right 0 top 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        .info-content{
+          top: 80%;
+          width: 100%;
+          display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+ 
+        }
+        .logo-peaky{
+          width: 300px;
+          margin-top: 10px;
+          margin-left: 0px;
+        }
+        .peaky-info{
+         width: 300px;
+          margin-left: 0px;
+        }
+        .peaky-name{
+          font-size: 20px;
+        
+        }
+        .time-peaky{
+          font-size: 13px;
+          
+        }
+        .peaky-genre{
+          font-size: 10px;
+          
+        
+        }
+        .starring,.creators{
+          font-size: 10px;
+          
+        }
+
    
    
 }
